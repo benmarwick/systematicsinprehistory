@@ -1,8 +1,8 @@
 ---
 title: "Robert C. Dunnell’s Systematics in Prehistory at 50"
 author:
-  - Myfirstname Mylastname:
-      email: fl@oneplace.edu
+  - Felix Riede:
+      email: f.riede@cas.au.dk
       institute: [UofO]
       correspondence: true
   - Yourfirstname Yourlastname:
@@ -10,7 +10,7 @@ author:
       institute: [UofA]
       correspondence: false
 institute:
-  - UofO: University of One Place
+  - UofO: Department of Archaeology and Heritage Studies, Aarhus University, Moesgård Allé 20, 8270 Højbjerg, Denmark
   - UofA: University of Another Place
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
@@ -25,9 +25,9 @@ output:
 bibliography: references.bib
 csl: "../templates/journal-of-archaeological-science.csl" # Insert path for the bib-style
 abstract: |
-  In 2021 it will be fifty years since the publication of Robert C. Dunnell’s (1971) diminutive yet dense Systematics in Prehistory. At the height of the debate between Culture History and New Archaeology, Dunnell’s work sought to address a more fundamental issue that was and still is relevant to all branches of prehistoric archaeology, and especially to the study of the Paleolithic: systematics. Dunnell himself was notorious and controversial, however, but the importance of his work remains underappreciated. Like other precocious works of that tumultuous time - for instance, David Clarke’s Analytical Archaeology (1968; cf. Lycett & Shennan 2018) - Systematics in Prehistory today remains absent from most course readings and gathers dust on library shelves. In this contribution we argue for a greater appreciation of its as yet unfulfilled conceptual and analytical promise. In particular, we briefly chart its somewhat delayed impact via evolutionary archaeology, including how it has also influenced non-Anglophone traditions – for instance in South America – and how classification issues obstinately persist in paleoanthropology and Paleolithic archaeology also today.
+  2021 marks the fiftith anniversary of the publication of Robert C. Dunnell’s (1971) diminutive yet dense Systematics in Prehistory. At the height of the debate between Culture History and New Archaeology, Dunnell’s work sought to address a more fundamental issue that was and still is relevant to all branches of prehistoric archaeology, and especially to the study of the Paleolithic: systematics. Dunnell himself was notorious and controversial, however, but the importance of his work remains underappreciated. Like other precocious works of that tumultuous time Systematics in Prehistory today remains absent from most course readings and gathers dust on library shelves. In this contribution we argue for a greater appreciation of its as yet unfulfilled conceptual and analytical promise. In particular, we briefly chart its somewhat delayed impact via evolutionary archaeology, including how it has also influenced non-Anglophone traditions, especially in South America. The obstinate persistence of classification issues in paleoanthropology and Paleolithic archaeology, we argue, warrants a second look at Dunnell's Systematics.
 keywords: |
-  keyword 1; keyword 2; keyword 3
+  Systematics; Evolutionary archaeology; Cultural phylogenetics; Robert C. Dunnell
 highlights: |
   These are the highlights. 
 ---
@@ -77,8 +77,6 @@ Here are some citations @dunnell1971 @clarke1968 @lycett2018
 ```{r sip-keywords-in-titles, fig.cap="Keywords in titles of works citing 'Systematics'. Inset shows languages of works citing 'Systematics'. Data collected from Google Scholar on October 2020", fig.width = 5, fig.height = 6, code = xfun::read_utf8(here::here("analysis/paper/005-keywords-in-titles-of-citing-works.R"))}
 # this block runs the code that makes the plot of keywords in titles of works citing SIP
 ```
-
-
 
 # Acknowledgements
 
