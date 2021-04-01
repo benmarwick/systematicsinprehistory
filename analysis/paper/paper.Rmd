@@ -1,0 +1,112 @@
+---
+title: "Robert C. Dunnell’s Systematics in Prehistory at 50"
+author:
+  - Myfirstname Mylastname:
+      email: fl@oneplace.edu
+      institute: [UofO]
+      correspondence: true
+  - Yourfirstname Yourlastname:
+      email: fl@another.edu
+      institute: [UofA]
+      correspondence: false
+institute:
+  - UofO: University of One Place
+  - UofA: University of Another Place
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+    bookdown::word_document2:
+      number_sections: false 
+      fig_caption: yes
+      reference_docx: "../templates/template.docx" # Insert path for the DOCX file
+      pandoc_args:
+      - --lua-filter=../templates/scholarly-metadata.lua
+      - --lua-filter=../templates/author-info-blocks.lua
+      - --lua-filter=../templates/pagebreak.lua
+bibliography: references.bib
+csl: "../templates/journal-of-archaeological-science.csl" # Insert path for the bib-style
+abstract: |
+  In 2021 it will be fifty years since the publication of Robert C. Dunnell’s (1971) diminutive yet dense Systematics in Prehistory. At the height of the debate between Culture History and New Archaeology, Dunnell’s work sought to address a more fundamental issue that was and still is relevant to all branches of prehistoric archaeology, and especially to the study of the Paleolithic: systematics. Dunnell himself was notorious and controversial, however, but the importance of his work remains underappreciated. Like other precocious works of that tumultuous time - for instance, David Clarke’s Analytical Archaeology (1968; cf. Lycett & Shennan 2018) - Systematics in Prehistory today remains absent from most course readings and gathers dust on library shelves. In this contribution we argue for a greater appreciation of its as yet unfulfilled conceptual and analytical promise. In particular, we briefly chart its somewhat delayed impact via evolutionary archaeology, including how it has also influenced non-Anglophone traditions – for instance in South America – and how classification issues obstinately persist in paleoanthropology and Paleolithic archaeology also today.
+keywords: |
+  keyword 1; keyword 2; keyword 3
+highlights: |
+  These are the highlights. 
+---
+
+Keywords: `r rmarkdown::metadata$keywords`
+
+Highlights: `r rmarkdown::metadata$highlights`
+
+<!-- The following code chunk defines some general settings how code chunks should behave. -->
+
+```{r setup, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  echo = FALSE,
+  comment = "#>",
+  fig.path = "../figures/",
+  dpi = 300
+)
+
+# Google doc of notes and drafting: https://docs.google.com/document/d/1DBEPXkOQPhlgVigoGh7gG8sSBFQ87GODix235kzlFYU/edit
+```
+
+<!-- The actual document text starts here: -->
+
+## Introduction
+
+Here are some citations @dunnell1971 @clarke1968 @lycett2018
+
+```{r sip-prepare-data, code = xfun::read_utf8(here::here("analysis/paper/001-scrape-references-from-saved-webpages.R"))}
+# this block runs the code that imports the citations data and puts it into a data frame
+```
+
+```{r sip-citations-over-time, code = xfun::read_utf8(here::here("analysis/paper/002-citations-to-sip-over-time.R"))}
+# this block runs the code that makes the plot of citations over time, we combine it with the next plot, so nothing shows here
+```
+
+```{r sip-citations-of-citing-work, fig.cap="Citations to 'Systematics' over time. Inset shows distributions of citations to works citing 'Systematics'. Data collected from Google Scholar on October 2020", fig.width = 5, fig.height = 5, code = xfun::read_utf8(here::here("analysis/paper/003-citatations-of-citing-works-over-time.R"))}
+# this block runs the code that makes the plot citations to works citing SIP, and combines it with the previous plot
+```
+
+```{r sip-langs-of-citing-works, code = xfun::read_utf8(here::here("analysis/paper/004-languages-of-citing-works.R"))}
+# this block runs the code that makes the plot of languages of titles of works citing SIP, we combine it with the next plot
+```
+
+```{r sip-keywords-in-titles, fig.cap="Keywords in titles of works citing 'Systematics'. Inset shows languages of works citing 'Systematics'. Data collected from Google Scholar on October 2020", fig.width = 5, fig.height = 6, code = xfun::read_utf8(here::here("analysis/paper/005-keywords-in-titles-of-citing-works.R"))}
+# this block runs the code that makes the plot of keywords in titles of works citing SIP
+```
+
+
+
+# Acknowledgements
+
+<!-- The following line inserts a page break  -->
+
+\newpage
+
+# References
+
+<!-- The following line ensures the references appear here for the MS Word or HTML output files, rather than right at the end of the document (this will not work for PDF files):  -->
+
+::: {#refs}
+:::
+
+\newpage
+
+### Colophon
+
+This report was generated on `r Sys.time()` using the following computational environment and dependencies:
+
+```{r colophon, cache = FALSE}
+# which R packages and versions?
+if ("devtools" %in% installed.packages()) devtools::session_info()
+```
+
+The current Git commit details are:
+
+```{r}
+# what commit is this file at? 
+if ("git2r" %in% installed.packages() & git2r::in_repository(path = ".")) git2r::repository(here::here())  
+```
