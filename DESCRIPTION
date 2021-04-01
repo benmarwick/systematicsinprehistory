@@ -18,3 +18,5 @@ Imports: bookdown,
     here
 Suggests: devtools,
     git2r
+URL: https://github.com/benmarwick/systematicsinprehistory
+BugReports: https://github.com/benmarwick/systematicsinprehistory/issues
