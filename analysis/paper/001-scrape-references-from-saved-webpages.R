@@ -1,5 +1,10 @@
 
-# I went to https://scholar.google.com/scholar?cites=4127027525661109296&as_sdt=5,48&sciodt=0,48&hl=en and manually downloaded each search result page as a single HTML page. Inspector Gadget wouldn't work for these pages, so I used the Chrome Inspector to figure out the node IDs to extract data from.
+# I went to https://scholar.google.com/scholar?cites=4127027525661109296&as_sdt=5,48&sciodt=0,48&hl=en
+# and manually downloaded each search result page as a single HTML page.
+# Inspector Gadget wouldn't work for these pages, so I used the Chrome Inspector to
+# figure out the node IDs to extract data from.
+
+prepare_the_data_fn <- function(){
 
 library(tidyverse)
 library(rvest)
@@ -7,16 +12,14 @@ library(rvest)
 # read in HTML files
 
 srp <-
-  list.files(here::here("analysis/data/raw_data"),
+  list.files(here::here("analysis/data/raw_data/2021-06-14"),
              full.names = TRUE)
-
 
 # ".gs_rt" title of citing work
 # ".gs_ri" combination of things
 # ".gs_a" author, year, journal title
 # ".gs_fl" citation count
 # ".gs_rs" snippet of text
-
 
 title_of_citing_work <-
   map(srp,
@@ -25,7 +28,11 @@ title_of_citing_work <-
         html_nodes(".gs_rt") %>%
         html_text
   )  %>%
-  unlist # 488
+  unlist # 561
+
+# drop title of SIP since we don't want that in here
+title_of_citing_work <- title_of_citing_work[title_of_citing_work != "Systematics in prehistory"  ]
+# 510 items
 
 author_of_citing_work <-
   map(srp,
@@ -34,7 +41,7 @@ author_of_citing_work <-
         html_nodes(".gs_a") %>%
         html_text
   )  %>%
-  unlist # 488
+  unlist # 510
 
 citationcount_of_citing_work <-
   map(srp,
@@ -44,7 +51,6 @@ citationcount_of_citing_work <-
         html_text
   ) %>%
   unlist
-
 
 # combine into a tibble
 srp_structured_tbl <-
@@ -73,4 +79,9 @@ srp_structured_tbl_1 <-
   # some items have two years, like the authors birth year or something, we'll get the second year
   mutate(year_pub = map_chr(year_pub, ~ifelse(length(.x) == 2, .x[2], .x))) %>%
   mutate(year_pub = parse_integer(year_pub)) %>%
+  # only items with a publication date after SIP was published, and only items with a date
   filter(year_pub >= 1971)
+
+return(srp_structured_tbl_1)
+
+}
