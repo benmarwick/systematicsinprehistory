@@ -8,6 +8,8 @@ COPY . /systematicsinprehistory
 
 # go into the repo directory
 RUN . /etc/environment \
+  && R -e "install.packages('remotes', repos = c(CRAN = 'https://cloud.r-project.org'))" \
+  && R -e "remotes::install_github('rstudio/renv')" \
   # install pkgs we need
   && R -e "renv::restore()" \
   # run all the code
