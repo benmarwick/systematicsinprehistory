@@ -4,12 +4,12 @@ FROM rocker/tidyverse:4.0.3
 # required
 MAINTAINER Ben Marwick <benmawick@gmail.com>
 
-COPY . /systematicsinprehistory
+WORKDIR /systematicsinprehistory
+COPY .
+RUN R -e 'renv::restore()'
 
 # go into the repo directory
-RUN . /etc/environment \
-  && ls -asf \
-  && R -e "install.packages('remotes', repos = c(CRAN = 'https://cloud.r-project.org'))" \
+RUN  R -e "install.packages('remotes', repos = c(CRAN = 'https://cloud.r-project.org'))" \
   && R -e "remotes::install_github('rstudio/renv')" \
   # install pkgs we need
   && R -e "renv::restore()" \
