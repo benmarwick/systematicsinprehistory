@@ -18,6 +18,8 @@ Title <- "Title of your paper goes here"
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/benmarwick/systematicsinprehistory/master?urlpath=rstudio)
 
+[![run on Docker](https://github.com/benmarwick/systematicsinprehistory/workflows/run-on-docker/badge.svg)](https://github.com/benmarwick/systematicsinprehistory/actions)
+
 This repository contains the data and code for our paper:
 
 > Authors, (YYYY). _`r Title`_. Name of journal/book <https://doi.org/xxx/xxx>

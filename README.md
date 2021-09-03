@@ -5,6 +5,9 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/benmarwick/systematicsinprehistory/master?urlpath=rstudio)
 
+[![run on
+Docker](https://github.com/benmarwick/systematicsinprehistory/workflows/run-on-docker/badge.svg)](https://github.com/benmarwick/systematicsinprehistory/actions)
+
 This repository contains the data and code for our paper:
 
 > Authors, (YYYY). *Title of your paper goes here*. Name of journal/book
@@ -62,7 +65,7 @@ You can download the compendium as a zip from from this URL:
 by followinfg these steps:
 
 1.  open the `.Rproj` file in RStudio  
-2.  run `renv::restoer()` to download and install the packages required
+2.  run `renv::restore()` to download and install the packages required
     to run our code  
 3.  run `targets::tar_make()` to run our code in order, the final step
     of this will be knitting the R Markdown document to produce the
