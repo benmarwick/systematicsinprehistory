@@ -5,8 +5,7 @@ FROM rocker/tidyverse:4.0.3
 MAINTAINER Ben Marwick <benmawick@gmail.com>
 
 WORKDIR /systematicsinprehistory
-COPY .
-RUN R -e 'renv::restore()'
+COPY . /systematicsinprehistory
 
 # go into the repo directory
 RUN  R -e "install.packages('remotes', repos = c(CRAN = 'https://cloud.r-project.org'))" \
