@@ -69,8 +69,8 @@ You can download the compendium as a zip from from this URL:
 
 1. open the `.Rproj` file in RStudio      
 2. run `renv::restore()` to download and install the packages required to run our code     
-3. run `targets::tar_make()` to run our code in order, the final step of this will be 
- knitting the R Markdown document to produce the `paper.docx`    
+3. run `targets::tar_make()` to run our analysis R code in the `analysis` directory in order, the final step of this will be 
+ knitting the R Markdown document to produce our submitted manuscript, `paper.docx`   
 
 ### Licenses
 
