@@ -4,28 +4,26 @@
 # systematicsinprehistory
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/benmarwick/systematicsinprehistory/master?urlpath=rstudio)
-
-[![run on
-Docker](https://github.com/benmarwick/systematicsinprehistory/workflows/run-on-docker/badge.svg)](https://github.com/benmarwick/systematicsinprehistory/actions)
+[![run-on-docker](https://github.com/benmarwick/systematicsinprehistory/workflows/run-on-docker.yaml/badge.svg)](https://github.com/benmarwick/systematicsinprehistory/actions)
 
 This repository contains the data and code for our paper:
 
-> Authors, (YYYY). *Title of your paper goes here*. Name of journal/book
-> <https://doi.org/xxx/xxx>
+> Authors, (YYYY). *Robert C. Dunnell’s ‘Systematics in Prehistory’ at
+> 50*. Name of journal/book <https://doi.org/xxx/xxx>
 
 Our pre-print is online here:
 
-> Authors, (YYYY). *Title of your paper goes here*. Name of
-> journal/book, Accessed 02 Sep 2021. Online at
+> Authors, (YYYY). *Robert C. Dunnell’s ‘Systematics in Prehistory’ at
+> 50*. Name of journal/book, Accessed 03 Sep 2021. Online at
 > <https://doi.org/xxx/xxx>
 
 ### How to cite
 
 Please cite this compendium as:
 
-> Authors, (2021). *Compendium of R code and data for Title of your
-> paper goes here*. Accessed 02 Sep 2021. Online at
-> <https://doi.org/xxx/xxx>
+> Authors, (2021). *Compendium of R code and data for Robert C.
+> Dunnell’s ‘Systematics in Prehistory’ at 50*. Accessed 03 Sep 2021.
+> Online at <https://doi.org/xxx/xxx>
 
 ## Contents
 
