@@ -4,7 +4,7 @@
 # systematicsinprehistory
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/benmarwick/systematicsinprehistory/master?urlpath=rstudio)
-[![run-on-docker](https://github.com/benmarwick/systematicsinprehistory/workflows/run-on-docker.yaml/badge.svg)](https://github.com/benmarwick/systematicsinprehistory/actions)
+[![run-on-docker.yaml](https://github.com/benmarwick/systematicsinprehistory/workflows/run-on-docker.yaml/badge.svg)](https://github.com/benmarwick/systematicsinprehistory/actions)
 
 This repository contains the data and code for our paper:
 
