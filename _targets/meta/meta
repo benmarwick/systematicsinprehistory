@@ -8,4 +8,4 @@ prepare_the_data_fn|function|a219fe41e3ef5131||||||||||||||
 citations_over_time_fn|function|4b776ce5f1792f3f||||||||||||||
 keywords_and_langs_of_citing_works_fn|function|8d356d8c6cacea2e||||||||||||||
 topic_model_of_citing_works_titles_fn|function|cffe998b33ad5820||||||||||||||
-paper|stem|93498d4886df55ee|7e16ed7208cac83c|413d00e1ac001a78|-1335449298|analysis/paper/paper.docx*analysis/paper/paper.Rmd|t18873.2702932234s|22a4a31ee2a3ac65|3207407|file|vector|||14.014||
+paper|stem|4e117d8bb7cfd68d|7e16ed7208cac83c|413d00e1ac001a78|-1335449298|analysis/paper/paper.docx*analysis/paper/paper.Rmd|t18873.7728560421s|fb7be9356c1f2981|3207513|file|vector|||11.834||
