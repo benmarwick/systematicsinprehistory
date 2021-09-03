@@ -48,7 +48,7 @@ knitr::opts_chunk$set(
 # Google doc of notes and drafting: https://docs.google.com/document/d/1DBEPXkOQPhlgVigoGh7gG8sSBFQ87GODix235kzlFYU/edit
 ```
 
-```{r echo = FALSE}
+```{r echo = FALSE, eval=TRUE}
 # we put these here to make sure they are processed before the 
 # Rmd is knit (https://books.ropensci.org/targets/files.html) so
 # we have all the most current analysis before we see the figures

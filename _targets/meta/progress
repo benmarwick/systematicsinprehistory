@@ -1,1 +1,7 @@
 name|type|parent|branches|progress
+prepare_the_data|stem|prepare_the_data|0|skipped
+keywords_and_langs_of_citing_works|stem|keywords_and_langs_of_citing_works|0|skipped
+citations_over_time|stem|citations_over_time|0|skipped
+topic_model_of_citing_works_titles|stem|topic_model_of_citing_works_titles|0|skipped
+paper|stem|paper|0|started
+paper|stem|paper|0|built

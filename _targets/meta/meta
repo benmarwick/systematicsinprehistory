@@ -1,11 +1,11 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|iteration|parent|children|seconds|warnings|error
 topic_model_of_citing_works_titles|stem|2a3d709103999dfa|660733044c4b3c2b|4b62ecce25041945|-526000267||t18824.9352533363s|cd662b8948b9894f|1511543|rds|vector|||55.555|cols is now required when using unnest.Please use cols  cterms|
-paper|stem|a9663e1cec6a4775|7e16ed7208cac83c|413d00e1ac001a78|-1335449298|analysis/paper/paper.docx*analysis/paper/paper.Rmd|t18873.0729940265s|f7a521f2b1de0509|3207249|file|vector|||11.318|undefined subclass numericVector of class Mnumeric definition not updated|
+prepare_the_data|stem|deb1aecde0a12c59|f43fa2e0b408f66f|0b49249e6b9fbef1|-68417729||t18823.2877688014s|e66f2b96e9470361|31518|rds|vector|||4.793|undefined subclass numericVector of class Mnumeric definition not updated|
+keywords_and_langs_of_citing_works|stem|b07d4c241474e1f5|b2e7edb34f78e08d|4d2c84969ddf6395|-1896033996||t18823.288667979s|a1c456b03adbfbf8|44|rds|vector|||1.448||
+citations_over_time|stem|b07d4c241474e1f5|a34c87d2dd2d6435|e1ebae71d85a9627|-141362064||t18823.2892485082s|a1c456b03adbfbf8|44|rds|vector|||0.561|Removed 93 rows containing nonfinite values stat_bin.|
 my_script_files|object|25436376168a8b2b||||||||||||||
 prepare_the_data_fn|function|a219fe41e3ef5131||||||||||||||
 citations_over_time_fn|function|4b776ce5f1792f3f||||||||||||||
 keywords_and_langs_of_citing_works_fn|function|8d356d8c6cacea2e||||||||||||||
 topic_model_of_citing_works_titles_fn|function|cffe998b33ad5820||||||||||||||
-prepare_the_data|stem|deb1aecde0a12c59|f43fa2e0b408f66f|0b49249e6b9fbef1|-68417729||t18823.2877688014s|e66f2b96e9470361|31518|rds|vector|||4.793|undefined subclass numericVector of class Mnumeric definition not updated|
-keywords_and_langs_of_citing_works|stem|b07d4c241474e1f5|b2e7edb34f78e08d|4d2c84969ddf6395|-1896033996||t18823.288667979s|a1c456b03adbfbf8|44|rds|vector|||1.448||
-citations_over_time|stem|b07d4c241474e1f5|a34c87d2dd2d6435|e1ebae71d85a9627|-141362064||t18823.2892485082s|a1c456b03adbfbf8|44|rds|vector|||0.561|Removed 93 rows containing nonfinite values stat_bin.|
+paper|stem|3b8c62066df0595a|7e16ed7208cac83c|413d00e1ac001a78|-1335449298|analysis/paper/paper.docx*analysis/paper/paper.Rmd|t18873.2416262709s|eb4e0bf6c461e6dd|3207287|file|vector|||11.723||
