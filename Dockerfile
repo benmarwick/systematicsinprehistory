@@ -8,7 +8,9 @@ WORKDIR /systematicsinprehistory
 COPY . /systematicsinprehistory
 
 
-RUN  R -e "install.packages('remotes', repos = c(CRAN = 'https://cloud.r-project.org'))" \
+RUN  sudo apt-get update -y \
+  && sudo apt-get install -y libnlopt-dev \
+  && R -e "install.packages('remotes', repos = c(CRAN = 'https://cloud.r-project.org'))" \
   && R -e "remotes::install_github('rstudio/renv')" \
   # install pkgs we need
   && R -e "renv::restore()" \
