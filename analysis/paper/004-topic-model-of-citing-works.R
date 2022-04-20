@@ -6,6 +6,9 @@ topic_model_of_citing_works_titles_fn <- function(srp_structured_tbl_1){
 library(stm)
 library(quanteda)
 library(tidyverse)
+# also need pkgs: geometry, Rtsne, rsvd, ggthemes, gridGraphics
+# not sure why they don't install as deps of other pkgs or when
+# renv:: does it's job?
 
 custom_stopwords <- c(
   "looking",
@@ -249,7 +252,7 @@ plot_grid(tm2,
           rel_widths = c(1.1, 0.9)) +
   panel_border(remove = TRUE)
 
-ggsave(here::here('analysis/figures/topic-model-on-titles.jpg'),
+ggsave(here::here('analysis/figures/topic-model-on-titles.pdf'),
        height = 13,
        width = 20,
        dpi = 600)

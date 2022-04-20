@@ -107,7 +107,7 @@ Beyond the Anglosphere, we see citations from a small number works in Russian an
 how_many_topics <- topic_model_of_citing_works_titles$settings$dim$K
 ```
 
-```{r sip-topic-model, fig.cap="Left: Top twenty topics in titles of works citing 'Systematics'. The gamma value indicates their overall abunadnace, and the topics are labelled with the most heavily weighted words in each topic. Right upper: Clusters of citing works according to topic similarity, with clusters labelled by the most prominent topic. Clusters were computed by Principal Components Analysis of the topic proportions in each citing work, then a t-SNE to reduce dimensionality, and density based clustering and to identify clusters. Each data point is one document. Right lower: Plot of topics showing coherence and exclusivity metrics for each topic. Each data point is one topic", fig.width = 5, fig.height = 6}
+```{r sip-topic-model, fig.cap="Left: Top twenty topics in titles of works citing 'Systematics'. The gamma value indicates their overall abundance, and the topics are labelled with the most heavily weighted words in each topic. Right upper: Clusters of citing works according to topic similarity, with clusters labelled by the most prominent topic. Clusters were computed by Principal Components Analysis of the topic proportions in each citing work, then a t-SNE to reduce dimensionality, and density based clustering and to identify clusters. Each data point is one document. Right lower: Plot of topics showing coherence and exclusivity metrics for each topic. Each data point is one topic", fig.width = 5, fig.height = 6}
 knitr::include_graphics(here::here("analysis/figures/topic-model-on-titles.jpg"))
 ```
 
@@ -122,19 +122,27 @@ Dunnell intended *Systematics* to establish a distinctive form of scientific arc
 
 # Acknowledgements
 
+We thank Ruth Mace for encouraging us to submit this paper to Evolutionary Human Sciences. We also thank Mike O’Brien and one anonymous reviewer for the insightful comments on Dunnell and on our paper.
+
+# Author Contributions
+
+FR conceived of the study, FR, AA and BM designed the study and BM gathered the data and performed the analysis. FR, AA and BM wrote the article.
+
+# Conflict of Interest
+
+We declare no conflict of interests.
+
+# Financial Support
+
 This work is part of the CLIOARCH project, an ERC Consolidator Grant project that has received funding from the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme (grant agreement No. 817564).
 
-# Author biographies
+# Research Transparency and Reproducibility
 
-Felix Riede is Professor of Prehistoric Archaeology at Aarhus University and PI in the ERC-funded project CLIOARCH (<https://cas.au.dk/en/clioarch/>) that is revisiting Paleolithic cultural taxonomies and aims to put these on more robust epistemological and empirical foundations. His main areas of research are the early prehistory of Northern Europe, pioneer dispersals, cultural phylogenetics and human cognitive evolution.
+The data that support the findings of this study are openly available in the Open Science Framework at  <http://doi.org/10.17605/OSF.IO/JBPFW>. Readers may freely access these resources to reproduce all of the figures in the paper.
 
-Astolfo Araujo is Professor at the Museu de Arqueologia e Etnologia da Universidade de São Paulo. He is a leading South American scholar in the application of evolutionary thinking in archaeology. He has researched and written extensively on the cultural taxonomy of prehistoric Brazil and on the history of archaeology in the region.
+# Data Availability Statement 
 
-Ben Marwick is Professor at the Department of Anthropology, University of Washington -- Robert C. Dunnell's former department. He is widely known for his pioneering work in quantitative methods and reproducibility in archaeology, and his applications of cultural evolutionary and behavioral ecological models to the prehistory of mainland Southeast Asia and Australia in particular.
-
-# **Data Availability Statement**
-
-The raw data and R code for our analysis of the Google Scholar results are openly available online at <http://doi.org/10.17605/OSF.IO/JBPFW>.
+The data that support the findings of this study are openly available in the Open Science Framework at  <http://doi.org/10.17605/OSF.IO/JBPFW>.
 
 <!-- The following line inserts a page break  -->
 

@@ -53,7 +53,7 @@ ggdraw(plot_citations_to_sip) +
             .6,   # width
             .3)   # height
 
-ggsave(here::here("analysis/figures/citations-of-citing-works-over-time.png"),
+ggsave(here::here("analysis/figures/citations-of-citing-works-over-time.pdf"),
        h = 5,
        w = 9)
 

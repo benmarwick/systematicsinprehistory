@@ -83,7 +83,7 @@ ggdraw(plot_keywords) +
             .55,  # width
             .4)  # height
 
-ggsave(here::here("analysis/figures/languages-and-keywords-in-titles-of-citing-works.png"),
+ggsave(here::here("analysis/figures/languages-and-keywords-in-titles-of-citing-works.pdf"),
        h = 10,
        w = 10)
 
